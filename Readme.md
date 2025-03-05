@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия Болдина](https://up.htmlacademy.ru/htmlcss-individual/2/user/2348919).
 * Наставник: [Станислав Михайлов](https://htmlacademy.ru/profile/id139638).
-
+* Сайт: [Седона](https://boldinaa.github.io/2348919-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
