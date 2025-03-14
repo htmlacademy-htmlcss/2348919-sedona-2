@@ -32,10 +32,10 @@
             <a class="navigation-favorite-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
-            <span class="navigation-favorite-counter">12</span>
+            <span class="navigation-selected-counter">12</span>
           </li>
-          <li class="navigation-book">
-            <a class="navigation-book-link" href="#">Хочу сюда!</a>
+          <li class="navigation-catalog">
+            <a class="navigation-catolog-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,6 +46,7 @@
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <img class="welcome-logo" src="#" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
       </section>
+
     <section data-test="reasons" class="reasons">
       <p class="welcome-title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</p>
@@ -80,6 +81,7 @@
         </li>
       </ul>
     </section>
+
     <section data-test="advices" class="advices">
       <p class="advices-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
       <p class="advices-description">Опытный персонал и качественное обслуживание!</p>
@@ -101,18 +103,20 @@
         </li>
       </ul>
     </section>
+
     <section data-test="search" class="search">
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a class="search-link" href="#">Поиск гостиницы в Седоне</a>
     </section>
+
     <section data-test="subscribe" class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="subscribe-form-email" class="visually-hidden">Укажите ваш e-mail</label>
         <input class="subscribe-input" type="email" id="subscribe-form-email" name="subscribe-form-email" placeholder="Ваш e-mail">
-        <button class="button subscribe-button" type="submit">Подписаться</button>
+        <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
     </main>
@@ -130,7 +134,56 @@
         </li>
       </ul>
       <a class="footer-contact-phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-      <a class="footer-link" href="https://htmlacademy.ru/study"><span class="visually-hidden">Логотип htmlacademy</span></a>
+      <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Логотип htmlacademy</span></a>
     </footer>
-  </body>
+
+    <dialog class="modal" aria-label="Поиск гостиницы в городе Седона">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form class="modal" action="https://echo.htmlacademy.ru/" method="dialog"></form>
+        <fieldset class="modal-top-line">
+          <ul class="modal-content">
+            <li class="entry-field">
+              <label class="modal-label" for="arrival-date">Дата Заезда:</label>
+              <input class="modal-field" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <span class="modal-message modal-error">Мы не можем отправить вас в прошлое</span>
+            </li>
+            <li class="entry-field">
+              <label class="modal-label" for="departure-date">Дата Выезда:</label>
+              <input class="modal-field" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+              <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+            </li>
+            <li class="modal-group">
+              <label class="modal-group-label" for="adults">Взрослые</label>
+              <input class="modal-group-count" type="number" name="adults" id="adults" value="2" min="1">
+              <button class="modal-group-button" type="button">
+                <span class="visually-hidden"> Минус</span>
+              </button>
+              <button class="modal-group-button" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </li>
+            <li class="modal-group">
+              <label class="modal-group-label" for="child">Дети</label>
+              <input class="modal-group-count" type="number" name="child" id="child" value="2" min="0">
+              <button class="modal-group-button" type="button">
+                <span class="visually-hidden"> Минус</span>
+              </button>
+              <button class="modal-group-button" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+              <div class="hint">
+                <button class="hint" type="button">
+                  <span class="visually-hidden">Подсказка</span>
+                </button>
+                <p class="hint">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal-submit" type="submit">Найти</button>
+      </dialog>
+    </body>
 </html>
