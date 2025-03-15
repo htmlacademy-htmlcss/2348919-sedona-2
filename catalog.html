@@ -8,7 +8,7 @@
   <body>
     <header data-test="header" class="page-header">
       <a class="header-logo" href="index.html">
-        <img class="header-logo" src="#" alt="Логотип города Седона">
+        <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -19,7 +19,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -113,13 +113,14 @@
               <label class="filter-item-label" for="max-price">до</label>
               <input class="filter-item-input" type="text" name="max-price" id="max-price" value="9000">
             </div>
-            <div class="ranges-lider">
-              <label class="ranges-lider-label" for="lower">
+            <div class="ranges-slider">
+              <label class="ranges-slider-label" for="lower">
                 <span class="visually-hidden">Минимум</span>
               </label>
               <input class="min-input-ranges" type="range" name="input-range" id="lower" min="0" max="9000" step="500">
-              <div class="ranges-lider">
-                <label class="ranges-lider-label" for="upper">
+            </div>
+              <div class="ranges-slider">
+                <label class="ranges-slider-label" for="upper">
                   <span class="visually-hidden">Максимум</span>
                 </label>
               <input class="max-input-ranges" type="range" name="input-range" id="upper" min="0" max="9000" step="500">
