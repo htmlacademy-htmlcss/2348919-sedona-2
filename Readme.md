@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия Болдина](https://up.htmlacademy.ru/htmlcss-individual/2/user/2348919).
 * Наставник: [Станислав Михайлов](https://htmlacademy.ru/profile/id139638).
-
+* Сайт: [Седона](https://boldinaa.github.io/2348919-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
@@ -11,7 +11,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 ---
 
 ### Памятка
-
 #### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
