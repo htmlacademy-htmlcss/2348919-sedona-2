@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("worf2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: bold;
+  src: url("../fonts/ptsans-700.woff2") format("worf2");
+  font-display: swap;
+}
+
+/* Главная страница */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.page-header {
+ font-size: 20px;
+ line-height: 24px;
+ text-align: center;
+ text-decoration: none;
+ background-color: #ffffff;
+}
+
+.navigation-catalog {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.main-index {
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url(../images/catalog/divider.svg), url("../images/mountains-background.jpg");
+  background-size: 100% auto cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+}
+
+.mark-headings {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.welcome-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.color-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-item-city {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-light {
+  background-color:#83b3d31f;
+}
+
+.advantages-dark {
+  color:#000000;
+  background-color:#83b3d333;
+}
+
+.advices-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advices-description-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-link {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.subscribe {
+  color: #ffffff;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.search-description .subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.page-footer {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Модальное окно */
+
+.modal-label, .modal-submit {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.modal-error {
+  color: #ff5757;
+}
+
+.modal-field {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-group-count {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.hint {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color:#ffffff;
+  background-color: #0000004d;
+}
+
+modal-submit{
+  color:#ffffff;
+  background-color: #83b3d3;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/* Страница каталога */
+
+.inner-catalog {
+  color: #ffffff;
+  background-image: url("../images/catalog/mountains-inner.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  text-align: left;
+}
