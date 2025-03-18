@@ -26,20 +26,30 @@ body {
   background-color: #f2f2f2;
 }
 
-.page-header {
- font-size: 20px;
- line-height: 24px;
- text-align: center;
- text-decoration: none;
- background-color: #ffffff;
-}
-
-.navigation-catalog {
+.button {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.button-dark {
   background-color: #756157;
 }
+
+.button-light {
+  background-color: #82b3d3;
+}
+
+.page-header {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+ }
 
 .main-index {
   text-align: center;
@@ -82,6 +92,12 @@ body {
   background-color:#83b3d333;
 }
 
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .advices-description {
   font-weight: 400;
   font-size: 22px;
@@ -97,8 +113,6 @@ body {
 .search-link {
   font-size: 20px;
   line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
 }
 
 .subscribe {
@@ -118,10 +132,10 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #82b3d3;
 }
 
 .page-footer {
+  text-align: center;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
@@ -135,9 +149,10 @@ body {
 
 /* Модальное окно */
 
-.modal-label, .modal-submit {
+.modal-label {
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
 }
 
 .modal-message {
@@ -167,9 +182,9 @@ body {
   background-color: #0000004d;
 }
 
-modal-submit{
-  color:#ffffff;
-  background-color: #83b3d3;
+.modal-submit {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .visually-hidden {
@@ -179,8 +194,23 @@ modal-submit{
 
 /* Страница каталога */
 
+.inner-header {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+
+.main-inner {
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .inner-catalog {
   color: #ffffff;
+  background-color: #55ace3;
   background-image: url("../images/catalog/mountains-inner.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -188,7 +218,46 @@ modal-submit{
 }
 
 .inner-header-title {
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
+}
+
+.breadcrumbs-link {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.choice-input {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-caption {
+  font-weight: 700;
+}
+
+.catalog-filter-reset {
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  float: right;
+  background-color: transparent;
+}
+
+.button-select {
+  background-color: #7db54f;
+}
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
