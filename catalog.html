@@ -51,7 +51,9 @@
             <a class="breadcrumbs-link links" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
-          <li class="breadcrumbs-item"><span class="visually-hidden">Стрелка</span></li>
+          <li class="breadcrumbs-item">
+            <span class="visually-hidden">Стрелка</span>
+          </li>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link links">Гостиницы</a>
@@ -112,10 +114,14 @@
             <fieldset class="catalog-filter-cost">
               <legend class="catalog-filter-caption">Стоимость, ₽</legend>
               <div class="filter-input">
-                <label class="filter-item-label visually-hidden" for="min-price">от</label>
+                <div class="input-wrapper">
+                <label class="filter-item-label" for="min-price">от</label>
                 <input class="filter-item-input" type="text" name="min-price" id="min-price" value="0">
-                <label class="filter-item-label visually-hidden" for="max-price">до</label>
+              </div>
+              <div class="input-wrapper">
+                <label class="filter-item-label" for="max-price">до</label>
                 <input class="filter-item-input" type="text" name="max-price" id="max-price" value="9000">
+              </div>
               </div>
               <div class="ranges-slider">
                 <label class="ranges-slider-label" for="lower">
