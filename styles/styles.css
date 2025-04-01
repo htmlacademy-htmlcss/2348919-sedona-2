@@ -22,17 +22,16 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
   color: #000000;
   background-color: #f2f2f2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
 }
 
 main {
-  margin: 0 auto;
-  max-width: 1200px;
   text-align: center;
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
 }
 
 .visually-hidden {
@@ -78,19 +77,19 @@ p {
   display: grid;
   grid-template-columns: auto 2fr auto;
   margin: 0 auto;
-  max-width: 1200px;
   font-size: 20px;
   line-height: 24px;
   background-color: #ffffff;
 }
 
 .header-logo {
-  width: 140px;
+  display: block;
+  margin-left: 20px;
 }
 
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .navigation-item {
@@ -101,8 +100,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -116,10 +115,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 450px;
-  margin-right: 70px;
   min-width: 44px;
   min-height: 64px;
+  margin: 0;
+}
+
+.navigation-catalog {
+  margin: 0 70px 0;
+  align-content: center;
 }
 
 .welcome {
@@ -205,6 +208,11 @@ p {
   padding: 112.5px 85px;
   height: 385px;
   box-sizing: border-box;
+}
+
+.advantages-item:nth-child(4) .advantages-title {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .advantages-item:first-of-type,
@@ -394,10 +402,14 @@ p {
 
 .inner-catalog {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "breadcrumbs breadcrumbs breadcrumbs"
+  "filter filter filter";
   margin: 0 auto;
-  padding: 20px;
-  gap: 20px;
+  padding: 35px 70px 70px 70px;
+  gap: 20px 0;
   color: #ffffff;
   background-image: url("../images/catalog/mountains-inner.jpg");
   background-size: cover;
@@ -406,6 +418,7 @@ p {
 }
 
 .inner-header-title {
+  grid-area: header;
   margin: 0;
   font-weight: 700;
   font-size: 60px;
@@ -415,11 +428,11 @@ p {
 
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
+  grid-area: breadcrumbs;
   margin: 0;
   padding: 0;
   gap: 10px;
-  align-items: baseline;
+  align-items: center;
   list-style: none;
 }
 
@@ -428,44 +441,67 @@ p {
   line-height: 21px;
 }
 
+.breadcrumbs-item:nth-child(1) {
+  display: inline-block;
+  width: 13px;
+  height: 15px;
+  background-image: url(../images/catalog/house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-item:nth-child(2) {
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-image: url(../images/catalog/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .catalog-hotels {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  width: 1200px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 }
 
 .catalog-filter-title {
-  display: flex;
-  margin: 8px 0 40px;
-  padding: 0;
-  gap: 10px;
-  align-items: center;
+  margin: 0;
+  padding-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-align: left;
+}
+
+.catalog-filter-item {
+  text-align: left;
+}
+
+.catalog-filter-item:not(:last-of-type) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 20px;
+  display: grid;
+  grid-area: filter;
+  grid-template-columns: 150px 150px calc(288px + 70px) 181px;
+  padding: 0;
+  gap: 70px;
   border-radius: 5px;
 }
 
 .catalog-filter-group {
-  display: grid;
-  grid-template-columns: 150px 43px 2fr;
-  gap: 10px;
+  display: flex;
+  align-content: flex-start;
+  grid-column: span 1;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .catalog-filter-list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   gap: 10px;
@@ -473,9 +509,9 @@ p {
 }
 
 .catalog-filter-cost {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 15px;
+  grid-column: span 1;
+  margin-left: 70px;
+  padding: 0;
   gap: 15px;
   border: none;
   border-radius: 5px;
@@ -483,20 +519,39 @@ p {
 
 .filter-input {
   display: flex;
-  gap: 10px;
-  font-weight: 700px;
-  font-size: 18px;
-  line-height: 24px;
-  align-items: start;
-  border: none;
+  margin-bottom: 36px;
+  gap: 2px;
+}
+
+.input-wrapper {
+  position: relative;
 }
 
 .filter-item-input {
-  width: 143px;
+  width: 122px;
   height: 48px;
-  text-align: center;
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
   border: none;
-  border-radius: 4px;
+}
+
+.input-wrapper:nth-child(1) .filter-item-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.input-wrapper:nth-child(2) .filter-item-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.filter-item-label {
+position: absolute;
+right: 20px;
+bottom: 12px;
+color: #000000;
+opacity: 0.30;
 }
 
 .ranges-slider {
@@ -508,6 +563,7 @@ p {
 /* Общий стиль для ползунков */
 .min-input-ranges,
 .max-input-ranges {
+
   position: absolute;
   left: 0;
   width: 100%;
@@ -528,8 +584,9 @@ p {
   appearance: none;
   width: 20px; /* Размер ползунка */
   height: 20px;
+  margin-top: -8px;
   background: #ffffff; /* Белый цвет */
-  border-radius: 5%;
+  border-radius: 5px;
   cursor: pointer;
   pointer-events: all; /* Оставляем возможность взаимодействия */
   z-index: 2;
@@ -539,25 +596,29 @@ p {
 .max-input-ranges::-moz-range-thumb {
   width: 16px;
   height: 16px;
+  margin-top: -8px;
   background: #ffffff;
   border-radius: 70%;
   cursor: pointer;
   pointer-events: all;
 }
 
-
 .button-catalog {
   display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
+  flex-direction: column;
+  padding-top: 56px;
+  gap: 32px;
+  grid-column: span 1;
 }
 
 .catalog-filter-submit,
 .catalog-filter-reset {
+  width: 100%;
+  height: 36px;
   padding: 8px 50px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .catalog-filter-reset{
@@ -566,11 +627,6 @@ p {
   background: transparent;
   float: right;
   background-color: transparent;
-}
-
-.choice-input {
-  font-size: 18px;
-  line-height: 23px;
 }
 
 .catalog-head {
@@ -620,7 +676,11 @@ p {
 }
 
 .catalog-filter-caption {
+  text-align: left;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 32px;
 }
 
 .button-select {
