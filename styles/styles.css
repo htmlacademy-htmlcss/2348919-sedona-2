@@ -316,6 +316,12 @@ p {
   background-repeat: no-repeat;
 }
 
+.subscribe-form {
+  display: flex;
+  margin: 0 auto;
+  width: 684px;
+}
+
 .subscribe-input {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -538,25 +544,30 @@ p {
 
 .choice-input::after {
   content: "";
+  display: block;
   position: center;
   width: 24px;
   height: 20px;
   font-size: 30px;
+}
+
+.choice-input:checked.choice-input::after {
   background-image: url("../images/catalog/tick.svg");
+  background-position: 4px;
   background-repeat: no-repeat;
 }
 
 .choice-radio {
-appearance: none;
-display: inline-grid;
-align-items: center;
-justify-content: center;
-width: 20px;
-height: 20px;
-margin: 0 16px 0 0;
-border-radius: 50%;
-background-color: #ffffff;
-cursor: pointer;
+  appearance: none;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 16px 0 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .choice-radio:checked.choice-radio::after {
@@ -683,7 +694,6 @@ cursor: pointer;
   width: 100%;
   height: 36px;
   padding: 8px 50px;
-  color:
 }
 
 .catalog-filter-reset {
@@ -801,8 +811,9 @@ cursor: pointer;
 }
 
 .stars {
-  position: relative;
-  height: 20px;
+  display: inline-block;
+  width: 18px;
+  height: 17px;
 }
 
 .stars::before {
@@ -813,23 +824,27 @@ cursor: pointer;
 }
 
 .stars.two-stars::before {
-  content: "★★☆☆☆";
+  content: "★★";
   color: #83b3d3;
+  font-size: 16px;
 }
 
 .stars.three-stars::before {
-  content: "★★★☆☆";
+  content: "★★★";
   color: #83b3d3;
+  font-size: 16px;
 }
 
 .stars.four-stars::before {
-  content: "★★★★☆";
+  content: "★★★★";
   color: #83b3d3;
+  font-size: 16px;
 }
 
 .stars.five-stars::before {
   content: "★★★★★";
   color: #83b3d3;
+  font-size: 16px;
 }
 
 .card-rating {
@@ -882,7 +897,7 @@ cursor: pointer;
 }
 
 .pagination-link {
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
 .pagination-link,
