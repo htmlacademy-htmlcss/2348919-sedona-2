@@ -813,38 +813,37 @@ p {
 .stars {
   display: inline-block;
   width: 18px;
-  height: 17px;
 }
 
 .stars::before {
   content: "★★★★★";
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 22px;
   color: #83b3d3;
 }
 
 .stars.two-stars::before {
   content: "★★";
   color: #83b3d3;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .stars.three-stars::before {
   content: "★★★";
   color: #83b3d3;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .stars.four-stars::before {
   content: "★★★★";
   color: #83b3d3;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .stars.five-stars::before {
   content: "★★★★★";
   color: #83b3d3;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .card-rating {
