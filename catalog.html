@@ -123,22 +123,19 @@
                   <input class="filter-item-input" type="text" name="max-price" id="max-price" value="9000">
                 </div>
               </div>
-
-              <div class="ranges-slider">
-                <label class="ranges-slider-label" for="lower">
-                  <span class="visually-hidden">Минимум</span>
-                </label>
-                <input class="min-input-ranges" type="range" name="input-range" id="lower" min="0" max="9000"
-                  step="500">
-              </div>
-              <div class="ranges-slider">
-                <label class="ranges-slider-label" for="upper">
-                  <span class="visually-hidden">Максимум</span>
-                </label>
-                <input class="max-input-ranges" type="range" name="input-range" id="upper" min="0" max="9000"
-                  step="500">
-              </div>
+                <div class="ranger-controls">
+                  <div class="bar">
+                    <span class="visually-hidden">Диапазон цены</span>
+                  </div>
+                  <div class="ranger-toggle ranger-toggle-min">
+                    <span class="visually-hidden">От 0 ₽</span>
+                  </div>
+                  <div class="ranger-toggle ranger-toggle-max">
+                    <span class="visually-hidden">До 9000 ₽</span>
+                  </div>
+                </div>
             </fieldset>
+
             <div class="button-catalog">
               <button class="catalog-filter-submit button-light button">Применить</button>
               <button class="catalog-filter-reset button">Сбросить</button>
@@ -154,49 +151,50 @@
           </h2>
           <label class="visually-hidden" for="list-filter">Сортировка по цене
           </label>
-              <select class="list-filter" id="list-filter">
-                <option value="low-cost" id="filter-low-cost">
-                  Сначала дешёвые
-                </option>
-                <option value="expensive" id="filter-expensive">Сначала дорогие</option>
-              </select>
-              <ul class="catalog-view-list roster">
-                <li class="catalog-view-item">
-                  <a class="ctalog-view-icons" href="catalog.html?view=tile">
-                    <span class="visually-hidden">Показать значками</span>
-                  </a>
-                </li>
-                <li class="catalog-view-item">
-                  <a class="catalog-view-one" href="catalog.html?view=card">
-                    <span class="visually-hidden">Показать по одному</span>
-                  </a>
-                </li>
-                <li class="catalog-view-item">
-                  <a class="catalog-view-list" href="catalog.html?view=list">
-                    <span class="visually-hidden">Показать списком</span>
-                  </a>
-                </li>
-              </ul>
+          <select class="list-filter" id="list-filter">
+            <option value="low-cost" id="filter-low-cost">
+              Сначала дешёвые
+            </option>
+            <option value="expensive" id="filter-expensive">Сначала дорогие</option>
+          </select>
+          <ul class="catalog-view-list roster">
+            <li class="catalog-view-item">
+              <a class="ctalog-view-icons" href="catalog.html?view=tile">
+                <span class="visually-hidden">Показать значками</span>
+              </a>
+            </li>
+            <li class="catalog-view-item">
+              <a class="catalog-view-one" href="catalog.html?view=card">
+                <span class="visually-hidden">Показать по одному</span>
+              </a>
+            </li>
+            <li class="catalog-view-item">
+              <a class="catalog-view-list" href="catalog.html?view=list">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <ul class="catalog-hotel-list roster">
           <li class="catalog-hotel-item">
             <a class="catalog-hotel-link" tabindex="-1" href="#">
-              <img class="catalog-hotel-image" src="images/catalog/starry-sky.jpg" width="300" height="210" alt="Звёздное небо из пещеры">
+              <img class="catalog-hotel-image" src="images/catalog/starry-sky.jpg" width="300" height="210"
+                alt="Звёздное небо из пещеры">
             </a>
             <a class="catalog-hotel-link links" href="#">
               <h3 class="catalog-hotel-title">Amara Resort & Spa</h3>
             </a>
             <div class="container-catalog">
-            <span class="catalog-hotel-card">Гостиница</span>
-            <span class="price-card">От 4000 ₽</span>
-            <a class="button-details button-dark button links" href="#">Подробнее</a>
-            <button class="button-light button" type="button">В избранное</button>
-            <p class="stars four-stars">
-              <span class="visually-hidden">Гостиница 4 звезды</span>
-            </p>
-            <p class="card-rating">Рейтинг: 8,5</p>
-          </div>
+              <span class="catalog-hotel-card">Гостиница</span>
+              <span class="price-card">От 4000 ₽</span>
+              <a class="button-details button-dark button links" href="#">Подробнее</a>
+              <button class="button-light button" type="button">В избранное</button>
+              <p class="stars four-stars">
+                <span class="visually-hidden">Гостиница 4 звезды</span>
+              </p>
+              <p class="card-rating">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="catalog-hotel-item">
             <a class="catalog-hotel-link" tabindex="-1" href="#">
@@ -207,15 +205,15 @@
               <h3 class="catalog-hotel-title">Villas at Poco Diablo</h3>
             </a>
             <div class="container-catalog">
-            <span class="catalog-hotel-card">Гостиница</span>
-            <span class="price-card">От 5000 ₽</span>
-            <a class="button-details button-dark button links" href="#">Подробнее</a>
-            <button class="button-select button" type="button">В избранное</button>
-            <p class="stars four-stars">
-              <span class="visually-hidden">Гостиница 4 звезды</span>
-            </p>
-            <p class="card-rating">Рейтинг: 9,2</p>
-          </div>
+              <span class="catalog-hotel-card">Гостиница</span>
+              <span class="price-card">От 5000 ₽</span>
+              <a class="button-details button-dark button links" href="#">Подробнее</a>
+              <button class="button-select button" type="button">В избранное</button>
+              <p class="stars four-stars">
+                <span class="visually-hidden">Гостиница 4 звезды</span>
+              </p>
+              <p class="card-rating">Рейтинг: 9,2</p>
+            </div>
           </li>
           <li class="catalog-hotel-item">
             <a class="catalog-hotel-link" tabindex="-1" href="#">
@@ -226,15 +224,15 @@
               <h3 class="catalog-hotel-title">Desert Quail Inn</h3>
             </a>
             <div class="container-catalog">
-            <span class="catalog-hotel-card">Гостиница</span>
-            <span class="price-card">От 2500 ₽</span>
-            <a class="button-details button-dark button links" href="#">Подробнее</a>
-            <button class="button-light button" type="button">В избранное</button>
-            <p class="stars three-stars">
-              <span class="visually-hidden">Гостиница 3 звезды</span>
-            </p>
-            <p class="card-rating">Рейтинг: 6,9</p>
-          </div>
+              <span class="catalog-hotel-card">Гостиница</span>
+              <span class="price-card">От 2500 ₽</span>
+              <a class="button-details button-dark button links" href="#">Подробнее</a>
+              <button class="button-light button" type="button">В избранное</button>
+              <p class="stars three-stars">
+                <span class="visually-hidden">Гостиница 3 звезды</span>
+              </p>
+              <p class="card-rating">Рейтинг: 6,9</p>
+            </div>
           </li>
           <li class="catalog-hotel-item">
             <a class="catalog-hotel-link" tabindex="-1" href="#">
@@ -245,15 +243,15 @@
               <h3 class="catalog-hotel-title">GreenTree Inn</h3>
             </a>
             <div class="container-catalog">
-            <span class="catalog-hotel-card">Гостиница</span>
-            <span class="price-card">От 1500 ₽</span>
-            <a class="button-details button-dark button links" href="#">Подробнее</a>
-            <button class="button-light button" type="button">В избранное</button>
-            <p class="stars two-stars">
-              <span class="visually-hidden">Гостиница 2 звезды</span>
-            </p>
-            <p class="card-rating">Рейтинг: 5,0</p>
-          </div>
+              <span class="catalog-hotel-card">Гостиница</span>
+              <span class="price-card">От 1500 ₽</span>
+              <a class="button-details button-dark button links" href="#">Подробнее</a>
+              <button class="button-light button" type="button">В избранное</button>
+              <p class="stars two-stars">
+                <span class="visually-hidden">Гостиница 2 звезды</span>
+              </p>
+              <p class="card-rating">Рейтинг: 5,0</p>
+            </div>
           </li>
         </ul>
 
@@ -286,7 +284,8 @@
         <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-form-email" class="visually-hidden">Укажите ваш e-mail</label>
-          <input class="subscribe-input subscribe-input-inner" type="email" id="subscribe-form-email" name="subscribe-form-email" placeholder="Ваш e-mail">
+          <input class="subscribe-input subscribe-input-inner" type="email" id="subscribe-form-email"
+            name="subscribe-form-email" placeholder="Ваш e-mail">
           <button class="subscribe-button button-light buton" type="submit">Подписаться</button>
         </form>
       </section>

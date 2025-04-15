@@ -609,6 +609,14 @@ p {
   position: relative;
 }
 
+.input-wrapper:nth-child(1) .filter-item-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.input-wrapper:nth-child(2) .filter-item-input {
+  border-radius: 0 4px 4px 0;
+}
+
 .filter-item-input {
   width: 122px;
   height: 48px;
@@ -620,14 +628,6 @@ p {
   border: none;
 }
 
-.input-wrapper:nth-child(1) .filter-item-input {
-  border-radius: 4px 0 0 4px;
-}
-
-.input-wrapper:nth-child(2) .filter-item-input {
-  border-radius: 0 4px 4px 0;
-}
-
 .filter-item-label {
   position: absolute;
   right: 20px;
@@ -636,49 +636,39 @@ p {
   opacity: 0.30;
 }
 
-.ranges-slider {
+.ranger-controls {
   position: relative;
-  width: 287px;
-  height: 0;
-}
-
-.min-input-ranges,
-.max-input-ranges {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  appearance: none;
-}
-
-.min-input-ranges::-webkit-slider-runnable-track,
-.max-input-ranges::-webkit-slider-runnable-track {
+  width: 290px;
   height: 4px;
-  background: #ffffff;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
 }
 
-.min-input-ranges::-webkit-slider-thumb,
-.max-input-ranges::-webkit-slider-thumb {
-  appearance: none;
+.ranger-controls .bar {
+  width: 220px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+
   width: 20px;
   height: 20px;
-  margin-top: -8px;
+
   background: #ffffff;
-  border-radius: 5px;
+  border: 8px solid #ffffff;
+  border-radius: 4px;
   cursor: pointer;
-  pointer-events: all;
-  z-index: 2;
 }
 
-.min-input-ranges::-moz-range-thumb,
-.max-input-ranges::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  margin-top: -8px;
-  background: #ffffff;
-  border-radius: 70%;
-  cursor: pointer;
-  pointer-events: all;
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .button-catalog {
@@ -706,6 +696,7 @@ p {
 
 .catalog-head {
   display: flex;
+  align-items: center;
   margin: 50px 70px 40px;
 }
 
@@ -714,7 +705,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   text-align: start;
-  margin: 0 auto 0 0;
+  margin-right: 200px;
   text-transform: uppercase;
 }
 
@@ -722,12 +713,18 @@ p {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  margin: 0 40px 0 0;
-  border: solid 2px;
+  color: #333333;
+  height: 49px;
+  margin: 0 70px 0 0;
+  border-style: solid 2px;
+  border-radius: 4px;
+  border-color: #e5e5e5;
   padding: 12px 131px 12px 20px;
 }
 
 .catalog-view-list {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 48px;
   height: 48px;
@@ -735,7 +732,6 @@ p {
   margin-right: 8px;
   border: solid 2px;
   color: #000000;
-  text-decoration: none;
 }
 
 .catalog-view-icons {
@@ -746,11 +742,11 @@ p {
 }
 
 .catalog-view-one {
-  background: url(../images/catalog/button-one.svg)no-repeat center center;
+  background: url(../images/catalog/button-one.svg) no-repeat center center;
 }
 
 .catalog-view-list {
-  background: url(../images/catalog/button-list.svg)no-repeat center center;
+  background: url(../images/catalog/button-list.svg) no-repeat center center;
 }
 
 .catalog-hotel-list {
