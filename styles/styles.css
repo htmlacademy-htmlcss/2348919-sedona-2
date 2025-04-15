@@ -721,40 +721,43 @@ p {
 
 .catalog-view {
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 48px;
-  height: 48px;
-  padding: 16px;
-  margin-right: 8px;
-  border: solid 2px;
+  gap: 8px;
+}
+
+.catalog-view-item {
+ display: flex;
+ box-sizing: border-box;
+ width: 48px;
+ height: 48px;
+ padding: 16px;
+ border: solid 2px;
+ color: #e5e5e5;
+}
+
+.catalog-view-item:nth-of-type(1) {
   color: #000000;
 }
 
 .catalog-view-icons {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-icons.svg) no-repeat center center;
-  color: #000000;
+  background-size: auto;
   text-decoration: none;
-  border: solid 2px #000000;
 }
 
 .catalog-view-one {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-one.svg) no-repeat center center;
 }
 
 .catalog-view-list {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-list.svg) no-repeat center center;
 }
 
