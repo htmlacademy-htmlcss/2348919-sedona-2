@@ -650,25 +650,22 @@ p {
   background-color: #ffffff;
 }
 
-.range-toggle {
+.ranger-toggle {
   position: absolute;
   top: -8px;
-
   width: 20px;
   height: 20px;
-
   background: #ffffff;
-  border: 8px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.range-toggle-min {
+.ranger-toggle-min {
   left: 0;
 }
 
-.range-toggle-max {
-  left: 80%;
+.ranger-toggle-max {
+  left: 70%;
 }
 
 .button-catalog {
@@ -722,7 +719,7 @@ p {
   padding: 12px 131px 12px 20px;
 }
 
-.catalog-view-list {
+.catalog-view {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -735,6 +732,10 @@ p {
 }
 
 .catalog-view-icons {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
   background: url(../images/catalog/button-icons.svg) no-repeat center center;
   color: #000000;
   text-decoration: none;
@@ -742,10 +743,18 @@ p {
 }
 
 .catalog-view-one {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
   background: url(../images/catalog/button-one.svg) no-repeat center center;
 }
 
 .catalog-view-list {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
   background: url(../images/catalog/button-list.svg) no-repeat center center;
 }
 
