@@ -129,13 +129,43 @@ p {
   margin: 0;
 }
 
+.navigation-search-link {
+  display: block;
+  padding: 22px 12px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/search-link.svg) no-repeat center center;
+}
+
+.navigation-favorite-link {
+  display: block;
+  padding: 22px 12px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/favorite-link.svg) no-repeat center center;
+}
+
+.navigation-selected-counter {
+  position: absolute;
+  top: 12px;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  margin-left: 23px;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  background: #7DB54F;
+  border-radius: 10px;
+}
+
 .navigation-catalog {
-  margin: 0 70px 0;
+  margin: 0 70px 0 20px;
   align-content: center;
 }
 
 .navigation-catolog-link {
-  padding: 8px 18px;
+  padding: 8px 34px;
 }
 
 .welcome {
@@ -143,7 +173,7 @@ p {
   justify-content: center;
   padding: 50px 0 80px;
   background-color: #ffffff;
-  background-image: url(../images/catalog/divider.svg), url("../images/mountains-background.jpg");
+  background-image: url(../images/divider.svg), url("../images/mountains-background.jpg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: center bottom, center;
@@ -168,8 +198,8 @@ p {
 
 .color-description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   color: #333333;
 }
 
@@ -275,7 +305,32 @@ p {
 }
 
 .advices-title-item {
+  position: relative;
   text-transform: uppercase;
+}
+
+.advices-title-item::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  top: -10px;
+  left: 77px;
+}
+
+.advices-house {
+  background-repeat: no-repeat;
+  background-image: url('../images/advices-house.svg');
+}
+
+.advices-burger {
+  background-repeat: no-repeat;
+  background-image: url('../images/advices-burger.svg');
+}
+
+.advices-gift {
+  background-repeat: no-repeat;
+  background-image: url('../images/advices-gift.svg');
 }
 
 .advices-description {
@@ -370,6 +425,16 @@ p {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-link::before {
+  content: "";
+  display: block;
+  margin: 48px 70px 38px;
+  width: 115px;
+  height: 33px;
+  background-image: url(../images/logo-htmlacademy.svg);
+  background-color: #ffffff;
 }
 
 /* Модальное окно */
@@ -650,25 +715,22 @@ p {
   background-color: #ffffff;
 }
 
-.range-toggle {
+.ranger-toggle {
   position: absolute;
   top: -8px;
-
   width: 20px;
   height: 20px;
-
   background: #ffffff;
-  border: 8px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.range-toggle-min {
+.ranger-toggle-min {
   left: 0;
 }
 
-.range-toggle-max {
-  left: 80%;
+.ranger-toggle-max {
+  left: 70%;
 }
 
 .button-catalog {
@@ -705,7 +767,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   text-align: start;
-  margin-right: 200px;
+  margin-right: 178px;
   text-transform: uppercase;
 }
 
@@ -722,30 +784,41 @@ p {
   padding: 12px 131px 12px 20px;
 }
 
-.catalog-view-list {
+.catalog-view {
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 48px;
-  height: 48px;
-  padding: 16px;
-  margin-right: 8px;
-  border: solid 2px;
+  gap: 8px;
+}
+
+.catalog-view-item {
+ box-sizing: border-box;
+ width: 48px;
+ height: 48px;
+ border: solid 2px;
+ color: #e5e5e5;
+}
+
+.catalog-view-item:nth-of-type(1) {
   color: #000000;
 }
 
 .catalog-view-icons {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-icons.svg) no-repeat center center;
-  color: #000000;
-  text-decoration: none;
-  border: solid 2px #000000;
 }
 
 .catalog-view-one {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-one.svg) no-repeat center center;
 }
 
 .catalog-view-list {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: url(../images/catalog/button-list.svg) no-repeat center center;
 }
 
