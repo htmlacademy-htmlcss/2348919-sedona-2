@@ -156,7 +156,9 @@
         </a>
     </footer>
 
-    <dialog class="modal" aria-label="Поиск гостиницы в городе Седона" open>
+    <!--Чтобы открыть модальное окно, напиши "open"-->
+
+    <dialog class="modal" aria-label="Поиск гостиницы в городе Седона" close>
       <h2 class="modal-title mark-headings">Поиск гостиницы в Седоне</h2>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -176,11 +178,11 @@
             </li>
             <li class="modal-group-adult">
               <label class="modal-label" for="adults">Взрослые:</label>
-              <div clas="modal-group-button">
+              <div class="modal-group-button modal-adult">
               <button class="modal-button" type="button">
                 <span class="visually-hidden">Минус</span>
               </button>
-              <input class="modal-group-count" type="text" name="adults" id="adults" value="2" min="1">
+              <input class="modal-group-count" type="text" name="adults" id="adults" value="2">
               <button class="modal-button modal-button-more" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
@@ -197,7 +199,7 @@
               <button class="modal-button" type="button">
                 <span class="visually-hidden"> Минус</span>
               </button>
-              <input class="modal-group-count" type="text" name="child" id="child" value="2" min="0">
+              <input class="modal-group-count" type="text" name="child" id="child" value="2">
               <button class="modal-button modal-button-more" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>

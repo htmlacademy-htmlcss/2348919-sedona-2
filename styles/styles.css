@@ -16,6 +16,10 @@
 
 /* Главная страница */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -524,6 +528,7 @@ main {
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
 .modal-close {
@@ -593,7 +598,7 @@ main {
 }
 
 .modal-group-adult {
-  margin-right: 88px;
+  margin-right: 70px;
 }
 
 .modal-group-adult,
@@ -606,10 +611,14 @@ main {
 .modal-group-button {
   width: 111px;
   display: flex;
-  margin-left: 70px;
+  margin-left: 50px;
   align-items: center;
   border-radius: 4px;
   background-color: #f2f2f2;
+}
+
+.modal-adult {
+  margin-left: 46px;
 }
 
 .modal-button {
@@ -648,6 +657,7 @@ main {
 
 .modal-group-count {
   font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   width: 31px;
@@ -667,7 +677,7 @@ main {
   width: 26px;
   height: 26px;
   position: absolute;
-  margin-left: 48px;
+  margin-left: 46px;
 }
 
 .modal-tooltip-button {
@@ -699,6 +709,19 @@ main {
   box-sizing: border-box;
   background-color: #333333;
   display: none;
+}
+
+.modal-tooltip-text:before {
+  content:'';
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  top: -6px;
+  left: 10px;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/pointer-modal.svg");
 }
 
 .modal-submit {
@@ -848,7 +871,7 @@ main {
 .choice-input::after {
   content: "";
   display: block;
-  position: center;
+  position: absolute;
   width: 24px;
   height: 20px;
   font-size: 30px;
