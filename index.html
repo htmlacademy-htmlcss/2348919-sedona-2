@@ -167,7 +167,7 @@
             <li class="check-in-date">
               <label class="modal-label" for="arrival-date">Дата Заезда:</label>
               <input class="modal-field" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
-              <span class="modal-message modal-error">Мы не можем отправить вас в прошлое</span>
+              <span class="modal-message modal-error">Мы не можем отправить вас в прошлое.</span>
             </li>
             <li class="date-of-departure">
               <label class="modal-label" for="departure-date">Дата Выезда:</label>
@@ -175,31 +175,33 @@
               <span class="modal-message color-description">На эти даты есть свободные номера. Пока есть.</span>
             </li>
             <li class="modal-group-adult">
-              <label class="modal-label modal-group-label" for="adults">Взрослые</label>
-              <input class="modal-group-count" type="number" name="adults" id="adults" value="2" min="1">
-              <button class="modal-group-button" type="button">
-                <span class="visually-hidden"> Минус</span>
+              <label class="modal-label" for="adults">Взрослые:</label>
+              <div clas="modal-group-button">
+              <button class="modal-button" type="button">
+                <span class="visually-hidden">Минус</span>
               </button>
-              <button class="modal-group-button" type="button">
+              <input class="modal-group-count" type="text" name="adults" id="adults" value="2" min="1">
+              <button class="modal-button modal-button-more" type="button">
                 <span class="visually-hidden">Плюс</span>
               </button>
+            </div>
             </li>
             <li class="modal-group-children">
-              <label class="modal-label modal-group-label" for="child">Дети</label>
-              <input class="modal-group-count" type="number" name="child" id="child" value="2" min="0">
-              <button class="modal-group-button" type="button">
-                <span class="visually-hidden"> Минус</span>
-              </button>
-              <button class="modal-group-button" type="button">
-                <span class="visually-hidden">Плюс</span>
-              </button>
-              <div class="hint">
-                <button class="hint" type="button">
-                  <span class="visually-hidden">Подсказка</span>
-                </button>
-                <p class="hint">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до
+              <label class="modal-label modal-group-label" for="child">Дети:</label>
+              <div class="modal-tooltip">
+                <button class="modal-tooltip-button" type="button">i</button>
+                <p class="modal-tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до
                   6 лет размещаются бесплатно.</p>
               </div>
+              <div class="modal-group-button">
+              <button class="modal-button" type="button">
+                <span class="visually-hidden"> Минус</span>
+              </button>
+              <input class="modal-group-count" type="text" name="child" id="child" value="2" min="0">
+              <button class="modal-button modal-button-more" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
             </li>
           </ul>
         </fieldset>
