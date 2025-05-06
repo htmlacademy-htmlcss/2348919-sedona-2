@@ -76,7 +76,7 @@ main {
 
 .button-light {
   background-color: #83b3d3;
-  padding: 6px 18px;
+  padding: 9px 18px;
 }
 
 .button-light:hover {
@@ -204,7 +204,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 50px 0 83px;
-  background-color: #ffffff;
+  background-color: #3F5E72;
   background-image: url(../images/divider.svg), url("../images/mountains-background.jpg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
@@ -224,6 +224,7 @@ main {
 }
 
 .welcome-description {
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   margin: 0 0 69px 0;
@@ -413,6 +414,7 @@ main {
   padding: 70px 0 105px;
   color: #ffffff;
   background-image: url("../images/index-background.jpg");
+  background-color: #3F5E72;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -432,7 +434,7 @@ main {
 
 .subscribe-form {
   display: flex;
-  margin: 0 257px 0 258px;
+  margin: 0 0 0 258px;
   width: 684px;
   height: 54px;
 }
@@ -526,6 +528,17 @@ main {
 }
 
 /* Модальное окно */
+
+.modal-overflow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
+  display: none;
+}
 
 .modal {
   position: fixed;
@@ -666,16 +679,21 @@ main {
 .modal-button::before {
   content: "";
   display: block;
+  position: relative;
   width: 14px;
   height: 2px;
+  left: 9px;
   background-color: rgba(117, 97, 87, 0.3);
 }
 
 .modal-button-more::after {
   content: "";
   display: block;
+  position: relative;
   width: 14px;
   height: 2px;
+  left: 9px;
+  top: -2px;
   background-color: rgba(117, 97, 87, 0.3);
   transform: rotate(90deg);
 }
@@ -784,12 +802,12 @@ main {
     "header header header"
     "breadcrumbs breadcrumbs breadcrumbs"
     "filter filter filter";
-  margin: 0 10px;
-  padding: 35px 70px 70px 70px;
+  padding: 30px 70px 70px 70px;
   gap: 7px;
   color: #ffffff;
   background-image: url("../images/catalog/mountains-inner.jpg");
-  background-size: cover;
+  background-color: #3F5E72;
+  background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -800,13 +818,13 @@ main {
   font-size: 60px;
   line-height: 78px;
   text-align: left;
-  margin: 0 -10px;
+  margin: 3px 8px 0 3px;
 }
 
 .breadcrumbs {
   display: flex;
   grid-area: breadcrumbs;
-  margin: 0 0 0 -10px;
+  margin: 0 0 0 3px;
   padding: 0;
   gap: 10px;
   align-items: center;
@@ -852,6 +870,7 @@ main {
   grid-template-columns: 150px 150px calc(288px + 70px) 181px;
   gap: 70px;
   margin-top: 34px;
+  margin-left: 10px;
   padding: 0;
   border-radius: 5px;
 }
@@ -1212,13 +1231,13 @@ main {
 
 .button-details {
   display: block;
-  padding: 6px 26px;
+  padding: 9px 25px;
 }
 
 .button-select {
   font-size: 16px;
   line-height: 20px;
-  padding: 6px 18px;
+  padding: 9px 20px;
   background-color: #7db54f;
 }
 
@@ -1234,42 +1253,42 @@ main {
 .stars {
   display: inline-block;
   width: 18px;
-  margin: 0;
+  margin: 6px 0 0 15px;
 }
 
 .stars::before {
   content: "★★★★★";
   letter-spacing: 2px;
-  font-size: 25px;
-  margin-left: -10px;
+  font-size: 18px;
+  margin-left: -8px;
   color: #83b3d3;
 }
 
 .stars.two-stars::before {
   content: "★★";
-  font-size: 25px;
-  margin-left: -10px;
+  font-size: 18px;
+  margin-left: -8px;
   color: #83b3d3;
 }
 
 .stars.three-stars::before {
   content: "★★★";
-  font-size: 25px;
-  margin-left: -10px;
+  font-size: 18px;
+  margin-left: -8px;
   color: #83b3d3;
 }
 
 .stars.four-stars::before {
   content: "★★★★";
-  font-size: 25px;
-  margin-left: -10px;
+  font-size: 18px;
+  margin-left: -8px;
   color: #83b3d3;
 }
 
 .stars.five-stars::before {
   content: "★★★★★";
-  font-size: 25px;
-  margin-left: -10px;
+  font-size: 18px;
+  margin-left: -8px;
   color: #83b3d3;
 }
 
@@ -1288,7 +1307,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin: 0 0 181px 0;
+  margin: -10px 0 178px 1px;
   padding: 0;
   max-height: 64px;
 }
@@ -1362,4 +1381,22 @@ main {
 
 .subscribe-input-inner {
   background-color: #f2f2f2;
+}
+
+.subscribe-form-inner {
+  display: flex;
+  margin: 53px 0 0 258px;
+  height: 54px;
+}
+
+.subscribe-button-inner {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  height: 59px;
+  padding: 13px 44px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  text-transform: uppercase;
 }
