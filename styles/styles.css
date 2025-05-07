@@ -256,7 +256,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 112.5px 80px;
+  padding: 112.5px 79px;
   height: 385px;
   box-sizing: border-box;
 }
@@ -348,16 +348,17 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-sizing:border-box;
   width: 400px;
   height: 385px;
-  padding: 45px 77px 0 86px;
+  padding: 77px 77px 0 86px;
 }
 
 .advices-title-item {
   position: relative;
   font-size: 24px;
   line-height: 28px;
-  margin-right: 10px;
+  margin-right: 6px;
   text-transform: uppercase;
 }
 
@@ -375,7 +376,7 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 4px 0 14px -8px;
+  margin: 5px 0 -2px -6px;
 }
 
 .advices-house::before {
@@ -399,7 +400,8 @@ main {
 }
 
 .search-title {
-  margin-top: 50px;
+  margin-top: 97px;
+  margin-right: -5px;
 }
 
 .search-link {
@@ -465,12 +467,12 @@ main {
   text-transform: uppercase;
 }
 
-.page-footer,
-.inner-footer {
+.page-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 20px;
   max-width: 1200px;
   max-height: 115px;
   text-align: center;
@@ -809,7 +811,7 @@ main {
   color: #ffffff;
   background-image: url("../images/catalog/mountains-inner.jpg");
   background-color: #3F5E72;
-  background-size: 100%, cover;
+  background-size: cover, cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -904,9 +906,8 @@ main {
   text-align: left;
 }
 
-.catalog-filter-item:not(:last-of-type) {
+.catalog-filter-item {
   margin: -2px 0 16px 0;
-  padding-left: 3px;
 }
 
 .choice-input {
@@ -1119,9 +1120,10 @@ main {
   color: #333333;
   height: 49px;
   margin: 35px 70px 0 0;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   border-color: #e5e5e5;
-  padding: 15px 106px 12px 20px;
+  padding: 15px 106px 10px 20px;
   appearance: none;
   background-image: url(../images/catalog/down-arrow.svg);
   background-color: #ffffff;
