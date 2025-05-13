@@ -265,7 +265,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 112.5px 79px;
+  padding: 110.5px 79px;
   min-height: 385px;
   height: fit-content;
   box-sizing: border-box;
@@ -281,6 +281,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 1200px;
+  min-height: 280px;
   padding: 0;
 }
 
@@ -322,7 +323,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 8px;
+  margin: 14px 6px 0 8px;
 }
 
 .advantages-text {
@@ -336,10 +337,11 @@ body {
 .advantages-dark {
   color: #000000;
   background-color: #83b3d333;
+  padding: 113.5px 79px;
 }
 
 .advices-title {
-  margin-top: 57px;
+  margin-top: 63px;
 }
 
 .advices-description {
@@ -448,7 +450,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  margin: -3px -1px 50px 0;
+  margin: -5px -1px 50px 0;
 }
 
 .subscribe-description {
@@ -540,7 +542,7 @@ body {
 }
 
 .footer-link {
-  margin: 34px 69px 0;
+  margin: 34px 69px -6px;
 }
 
 .footer-link:hover path {
@@ -1442,4 +1444,8 @@ body {
 .footer-contact-inner {
   margin-left: 83px;
   padding-top: 28px;
+}
+
+.footer-link-inner {
+  margin: 34px 69px 0;
 }
