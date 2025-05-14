@@ -497,7 +497,7 @@ body {
   margin: 0 auto;
   padding-bottom: 20px;
   max-width: 1200px;
-  min-height: 115px;
+  min-height: 100px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -555,8 +555,7 @@ body {
 }
 
 /* Модальное окно */
-
-.modal-overflow-open {
+.modal-overflow.modal-overflow-open {
   display: block;
 }
 
@@ -659,6 +658,10 @@ body {
   background-position: right 20px center;
 }
 
+.modal-field:hover {
+  outline: solid 3px #68a2c2;
+}
+
 .modal-message {
   display: block;
   font-weight: 400;
@@ -717,6 +720,11 @@ body {
   border: none;
   border-radius: 4px;
   background-color: #f2f2f2;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  outline: solid 2px #68a2c2;
 }
 
 .modal-button-more {
@@ -791,8 +799,8 @@ body {
   display: none;
 }
 
-.modal-tooltip:hover + .modal-tooltip-text,
-.modal-tooltip:focus + .modal-tooltip-text {
+.modal-tooltip-button:hover + .modal-tooltip-text,
+.modal-tooltip-button:focus + .modal-tooltip-text {
   display: block;
 }
 
